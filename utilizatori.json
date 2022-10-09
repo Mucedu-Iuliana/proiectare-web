@@ -1,0 +1,20 @@
+[
+    {
+        "utilizator": "Ana",
+        "parola": "mere",
+        "nume": "Ana",
+        "prenume": "Maria"
+    },
+    {
+        "utilizator": "iuli",
+        "parola": "pere",
+        "nume": "Georgeta",
+        "prenume": "Iuliana"
+    },
+    {
+        "utilizator": "ionica",
+        "parola": "vasi",
+        "nume": "Vasile",
+        "prenume": "Ion"
+    }
+]

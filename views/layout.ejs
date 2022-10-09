@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/assets/stil.css">
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+    <header>
+        <h2 class="title">Un local cu gust de cafea! </h2>
+        <div class="chimie1">
+            <a href="autentificare" class="log">Autentificare</a>
+            <a href="\">Home</a>
+            <a href="chestionar">Chestionar</a>
+            <form action="/delogare">
+                <input id="deconectare" type="submit" value="Deconectare">
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <%- body %>
+    </main>
+    <footer>
+        <div>
+            <p>Logat ca <%=log?? "" %>
+            </p>
+            &copy; Mucedu Georgeta-Iuliana
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

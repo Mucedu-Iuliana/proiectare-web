@@ -1,0 +1,165 @@
+
+<div class="meniu">
+
+        <a href="creare-bd">Creare BD</a>
+
+        <div class="produs">
+            <img src="/assets/coffee5.jpg" alt="">
+            <div class="informatii">
+                <h3>Cafea cu lapte</h3>
+                <h4>7 lei</h4>
+                <a href="inserare-db1" onclick="myFunction1()">Comanda</a>
+            </div>
+        </div>
+        <div class="produs">
+            <img src="/assets/coffee6.jpg" alt="">
+            <div class="informatii">
+                <h3>Expresso scurt </h3>
+                <h4>5 lei</h4>
+                <a href="inserare-db2" onclick="myFunction2()">Comanda</a>
+            </div>
+        </div>
+        <div class="produs">
+            <img src="/assets/coffee7.jpg" alt="">
+            <div class="informatii">
+                <h3>Expresso dublu</h3>
+                <h4>8 lei</h4>
+                <a href="inserare-db3" onclick="myFunction3()">Comanda</a>
+            </div>
+        </div>
+        <div class="produs">
+            <img src="/assets/coffee8.jpg" alt="">
+            <div class="informatii">
+                <h3>Cappucino</h3>
+                <h4>10 lei</h4>
+                <a href="inserare-db4" onclick="myFunction4()">Comanda</a>
+            </div>
+        </div>
+        <div class="produs">
+            <img src="/assets/coffe1.jpg" alt="">
+            <div class="informatii">
+                <h3>Cafea decofeinizată</h3>
+                <h4>15 lei</h4>
+                <a href="inserare-db5" onclick="myFunction5()">Comanda</a>
+            </div>
+        </div>
+        <div class="produs">
+            <img src="/assets/coffee9.jpg" alt="">
+            <div class="informatii">
+                <h3>Cafea Dalgona</h3>
+                <h4>12 lei</h4>
+                <a href="inserare-db6" onclick="myFunction6()">Comanda</a>
+            </div>
+        </div>
+        <div class="produs">
+            <img src="/assets/coffee10.jfif" alt="">
+            <div class="informatii">
+                <h3>Caramel Macchiato</h3>
+                <h4>11 lei</h4>
+                <a href="inserare-db7" onclick="myFunction7()">Comanda</a>
+            </div>
+        </div>
+        <form class="sale">
+            <select id="mySelect"></select>
+          </form>
+</div>
+<footer>
+    <div class="cllock">
+        <h1 class="clock">Timp de preparare</h1>
+        <div id="clockdiv">
+            <div>
+                <span class="minutes"></span>
+                <div class="smalltext">Minutes</div>
+            </div>
+            <div>
+                <span class="seconds"></span>
+                <div class="smalltext">Seconds</div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function getTimeRemaining(endtime) {
+        const total = Date.parse(endtime) - Date.parse(new Date());
+        const seconds = Math.floor((total / 1000) % 60);
+        const minutes = Math.floor((total / 1000 / 60) % 60);
+
+        return {
+            total,
+            minutes,
+            seconds
+        };
+    }
+
+    function initializeClock(id, endtime) {
+        const clock = document.getElementById(id);
+        const minutesSpan = clock.querySelector('.minutes');
+        const secondsSpan = clock.querySelector('.seconds');
+
+        function updateClock() {
+            const t = getTimeRemaining(endtime);
+
+            minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+            secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+            if (t.total <= 0) {
+                clearInterval(timeinterval);
+            }
+        }
+
+        updateClock();
+        const timeinterval = setInterval(updateClock, 1000);
+    }
+
+    const deadline = new Date(Date.parse(new Date()) + 10 * 60 * 1000);
+    initializeClock('clockdiv', deadline);
+
+
+
+
+
+
+function myFunction1() {
+  var x = document.getElementById("mySelect");
+  var option = document.createElement("option");
+  option.text = "Cafea cu lapte";
+  x.add(option);
+}
+function myFunction2() {
+  var x = document.getElementById("mySelect");
+  var option = document.createElement("option");
+  option.text = "Expresso scurt";
+  x.add(option);
+}
+function myFunction3() {
+  var x = document.getElementById("mySelect");
+  var option = document.createElement("option");
+  option.text = "Expresso dublu";
+  x.add(option);
+}
+function myFunction4() {
+  var x = document.getElementById("mySelect");
+  var option = document.createElement("option");
+  option.text = "Cappucino";
+  x.add(option);
+}
+function myFunction5() {
+  var x = document.getElementById("mySelect");
+  var option = document.createElement("option");
+  option.text = "Cafea decofeiizata";
+  x.add(option);
+}
+function myFunction6() {
+  var x = document.getElementById("mySelect");
+  var option = document.createElement("option");
+  option.text = "Cafea Dalgona";
+  x.add(option);
+}
+function myFunction7() {
+  var x = document.getElementById("mySelect");
+  var option = document.createElement("option");
+  option.text = "Caramel Macchiato";
+  x.add(option);
+}
+</script>

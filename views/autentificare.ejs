@@ -1,0 +1,16 @@
+<form action="/verificare-autentificare" method="post">
+    <div class="logare">
+    <fieldset class="aut">
+        <h2 class="err">
+            <%=errorMessage?? "" %>
+        </h2>
+        <legend class="text">Autentifică-te</legend>
+        <label name="utilizator" class="text">Utilizator: </label>
+        <input type="text" id="utilizator" name="utilizator"> <br><br>
+        <label class="text">Parolă: </label>
+        <input type="password" id="parola" name="parola"> <br><br>
+        <input type="submit" value="Autentificare">
+
+    </fieldset>
+    </div>
+</form>

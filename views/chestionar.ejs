@@ -1,0 +1,19 @@
+
+<div class="formular">
+    <h1>Chestionar</h1>
+    <br>
+    <form action="/rezultat-chestionar" method="post">
+        <% for(let i=0; i<intrebari.length; ++i){ %>
+            <h3>
+                <%= intrebari[i].intrebare %>
+            </h3>
+            <% for(let j=0; j<intrebari[i].variante.length; ++j){ %>
+                <input type="radio" name="<%= i %>" value="<%= j %>" />
+                <%= intrebari[i].variante[j] %>
+                    <br>
+                    <% } %>
+                    <% } %>
+                            <br><br>
+                            <button type="submit">Trimite</button>
+    </form>
+</div>

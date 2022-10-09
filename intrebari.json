@@ -1,0 +1,41 @@
+[
+    {
+        "intrebare": "Cum a fost per total experiența dumneavoastră în localul nostru?",
+        "variante": [
+            "Dezamăgitoare",
+            "Rezonabilă",
+            "Bună",
+            "Excelentă"
+        ],
+        "corect": 3
+    },
+    {
+        "intrebare": "Cât de probabil este să recomandați și altcuiva cafeneaua noastră?",
+        "variante": [
+            "Foarte probabil",
+            "Nu sunt hotărât acun",
+            "Deloc probabil"
+        ],
+        "corect": 0
+    },
+    {
+        "intrebare": "Cum vi s-a părut interacțiunea cu personalul? ",
+        "variante": [
+            "1 - îngrozitoare",
+            "3 - nu sunt mulțumit ",
+            "2 - satisfăcătoare",
+            "4 - bună",
+            "5 - extraordinară "
+        ],
+        "corect": 4
+    },
+    {
+        "intrebare": "Cum apreciați produsele noastre?",
+        "variante": [
+            "Am băut băuturi mai bune",
+            "Bune",
+            "Demențiale"
+        ],
+        "corect": 2
+    }
+]
